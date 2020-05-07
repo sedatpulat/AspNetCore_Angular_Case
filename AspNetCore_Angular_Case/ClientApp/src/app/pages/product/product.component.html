@@ -1,0 +1,17 @@
+<div class="card mb-3">
+  <h5 class="card-header">Products</h5>
+</div>
+<p *ngIf="!productList">Loading...</p>
+<div class="row">
+  <div class="col-md-3 mb-3" *ngFor="let item of productList">
+    <div class="card">
+      <img [src]="item.image" class="card-img-top" [attr.alt]="item.name">
+      <div class="card-body">
+        <h5 class="card-title">{{item.name}} {{item.id}}</h5>
+        <p class="card-text">{{item.description}}</p>
+        <a href="#" class="card-link">Card link</a>
+        <a href="#" class="card-link">Another link</a>
+      </div>
+    </div>
+  </div>
+</div>

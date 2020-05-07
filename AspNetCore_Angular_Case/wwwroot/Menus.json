@@ -1,0 +1,20 @@
+[
+  {
+    "Id": 1,
+    "Name": "Home Page",
+    "Link": "",
+    "Icon": "fa fa-home"
+  },
+  {
+    "Id": 2,
+    "Name": "Products",
+    "Link": "product",
+    "Icon": "fa fa-shopping-basket"
+  },
+  {
+    "Id": 3,
+    "Name": "Tasks",
+    "Link": "task",
+    "Icon": "fa fa-tasks"
+  }
+]

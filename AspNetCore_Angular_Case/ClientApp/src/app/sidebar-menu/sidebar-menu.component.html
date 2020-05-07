@@ -1,0 +1,13 @@
+<nav class="col-md-2 d-none d-md-block bg-light sidebar">
+  <div class="sidebar-sticky">
+    <p *ngIf="!menulist">Loading...</p>
+    <ul class="nav flex-column">
+      <li class="nav-item" *ngFor="let item of menulist" >
+        <a class="nav-link" [routerLink]="item.link" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }">
+          <i class="{{item.icon}}"></i>
+          {{item.name}}
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
