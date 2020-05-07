@@ -17,23 +17,5 @@ namespace AspNetCore_Angular_Case.Controllers
             _logger = logger;
             _env = env;
         }
-        [HttpGet]
-        public IEnumerable<ActivityTask> Get()
-        {
-
-            var menuList = new List<ActivityTask>();
-            menuList.Add(new ActivityTask
-            {
-                Id = 1,
-                Name = "Product"
-            });
-            menuList.Add(new ActivityTask
-            {
-                Id = 2,
-                Name = "Task"
-            });
-
-            return menuList;
-        }
     }
 }
